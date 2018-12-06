@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: "微软雅黑";
+  src: url("./msyh.ttf") format("woff"),
+  url("./msyh.ttf") format("truetype"),
+  url("./msyhbd.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

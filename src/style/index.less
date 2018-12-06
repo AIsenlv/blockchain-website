@@ -1,0 +1,240 @@
+//头部
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 99;
+    background: #04021f;
+    .nav{
+        max-width: 1300px;
+         min-width: 1000px;
+        //margin:0 auto;
+        margin-left: 240px;
+        li,.el-submenu__title{
+            font-size: 16px;
+            font-weight: bold;
+            color: @fff;
+            i{
+                color: @fff;
+            }
+            &:hover{
+                background-color: inherit!important;
+                color:#00a0e9!important;
+                i{
+                    color:#00a0e9!important;
+                }
+            }
+        }
+        
+    }
+    .topa{
+        font-size: 16px;
+        font-weight: bold;
+        color: @fff;
+        margin-right: 15px;
+        &:hover{
+            color:#00a0e9; 
+        }  
+    }
+    .el-menu--horizontal>.el-menu-item.is-active,.el-menu,.el-menu--horizontal>.el-menu-item{
+        border:0;
+        background-color: inherit!important;
+    }
+    .el-menu--horizontal>.el-menu-item.is-active,.el-submenu.is-active .el-submenu__title,.el-submenu:focus .el-submenu__title{
+        i{
+            color:#00a0e9!important;
+        }
+        color:#00a0e9;
+    }
+    .listIndex{
+        overflow: hidden;
+        height: 60px;
+        background-color: inherit!important;
+    }
+    .logo{margin-top:10px;}
+    .hodetop{
+        margin-top:10px;
+    }
+}
+
+//背景
+.com-publicity{
+    background-color: #010030;
+    height: 950px;
+    position: relative;
+    z-index: 9;
+    .backyuan{
+        position: absolute; 
+        bottom: 80px;
+        left: 55%;
+        margin-left: -330px;
+        .backimg{
+            width: 660px;
+            height: 660px;
+            opacity: 0.8;
+            background: url('../assets/buttonbackgourn.png')no-repeat;
+            background-size: contain;
+        }
+    }
+    .logoback{
+        position:absolute;
+        width:254px;
+        height: 254px;
+        border:2px solid #00a2e9;
+        border-radius: 50%;
+        bottom: 275px;
+        left: 55%;
+        margin-left: -127px;
+        background: url('../assets/LOGOts.png')no-repeat center;
+        background-size: inherit;
+    }
+    .canvas{
+        position: absolute;
+        left: 50%;
+        margin-left: -330px;
+        bottom: 0px;
+        // transform:rotate(485deg);
+        z-index: 99;
+    }
+    .aosucenter{
+        position: absolute;
+        width: 450px;
+        top: 300px;
+        left: 240px;
+        z-index: 999;
+        color: @fff;
+        .h3{
+            font-size: 33px;
+            margin-bottom: 25px;
+        }
+        .txt{
+            font-size: 17px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+        .btn{
+            width: 160px;
+            font-size: 18px;
+        }
+    }
+}
+//canvas画的弧线
+.cneteron{
+        position: absolute;
+        width: 660px;
+        height: 660px;
+        left: 55%;
+        margin-left: -330px;
+        bottom: 80px;
+        transform:rotate(0deg);
+        animation: end1 100s linear infinite; 
+        z-index: 88;
+      }
+    .cendiv{
+        position: absolute;
+        border-radius: 50%;
+        background:#eee;
+        box-shadow: 0 0 80px #0caba8;
+        overflow: hidden;
+        z-index: 100;
+        animation: screenMove01 2s, boxShine 2.5s 2s infinite alternate, screenMove02 3s infinite alternate linear;
+    }
+    .hu1{top: 50px;left: 415px;width: 50px;height: 50px;}
+    .hu2{top: 80px;left: 145px;width: 43px;height: 43px;}
+    .hu3{
+        width: 25px;height: 25px;left: 55px;top: 220px;
+        box-shadow: 0 0 40px #e938b1;
+        background-color:#e938b1;
+        animation: screenMove01 4s, boxShine3 2.5s 3s infinite alternate, screenMove02 6s infinite alternate linear;
+    }
+    .hu4{width:60px;height:60px;top: 278px;right: 23px;}
+    .hu5{width:45px;height: 45px;top:440px;right: 60px;}
+    .hu6{width:36px;height: 36px;bottom: 148px;left: 203px;}
+    .hu7{width:46px;height: 46px;bottom: 142px;left: 81px;}
+    .hu8{
+        width:33px;height: 33px;top: 162px;right: 93px;
+        box-shadow: 0 0 10px #00ffff;
+        background-color:#00ffff;
+        animation: screenMove01 5s, boxShine8 3.5s 2s infinite alternate, screenMove02 5s infinite alternate linear;
+    }
+    .hu9{
+        width:33px;height: 33px;bottom: 64px;right: 188px;
+        box-shadow: 0 0 30px #ffcf37;
+        background-color:#ffcf37;
+        animation: screenMove01 4s, boxShine9 2.5s 2s infinite alternate, screenMove02 3s infinite alternate linear;
+    }
+    .imgshyen{
+        position: absolute;
+        bottom: 0;
+        left: 55%;
+        width: 650px;
+        margin-left: -390px;
+        z-index: 53;
+        opacity: 0.6;
+    }
+    @keyframes end1{
+       from {-webkit-transform: rotate(0deg);}
+        to {-webkit-transform: rotate(360deg);}
+     }
+
+    @keyframes screenMove01 {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        100% {
+            opacity: 0.96;
+           transform: scale(1.1);
+        }
+    }
+    @keyframes screenMove02 {
+        0% {
+            transform: rotateX(-30deg);
+            transform: scale(1.1);
+            opacity: 0.96;
+            // box-shadow: 0 0 50px #0caba8;
+        }
+        100% {
+            transform: rotateX(30deg);
+            transform: scale(1);
+            opacity: 1;
+            // box-shadow: 0 0 10px #0caba8;
+        }
+    }
+    @keyframes boxShine {
+        0% {
+            box-shadow: 0 0 10px #0caba8;
+        }
+        100% {
+            box-shadow: 0 0 90px #0caba8;
+        }
+    }
+    @keyframes boxShine3 {
+        0% {
+            box-shadow: 0 0 40px #e938b1;
+        }
+        100% {
+            box-shadow: 0 0 80px #e938b1;
+        }
+    }
+    @keyframes boxShine8 {
+        0% {
+            box-shadow: 0 0 10px #00ffff;
+        }
+        100% {
+            box-shadow: 0 0 50px #00ffff;
+        }
+    }
+    @keyframes boxShine9 {
+        0% {
+            box-shadow: 0 0 30px #ffcf37;
+        }
+        100% {
+            box-shadow: 0 0 80px #ffcf37;
+        }
+    }
+.com-cention{
+    min-height: 1500px;  
+    
+}
