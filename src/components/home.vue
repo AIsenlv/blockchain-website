@@ -27,6 +27,10 @@
             <div class="cendiv hu9"></div>
         </div>
         <img src="../assets/loging.png" class="imgshyen" alt="">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 933895a650bb215f56aa3a3074b5d5ecc6393763
         <div class="aosucenter">
              <h3 class="h3">中琛云链积分通兑（ZC-IN）</h3>
              <div class="txt">是基于Hyperledger Fabric 1.x基础之上自主研发包区块链底层、SDK、浏览器、运维平台的商用级区块链级产品</div>
@@ -36,6 +40,13 @@
     <section class="">
         
     </section>
+<<<<<<< HEAD
+=======
+=======
+    </section>
+    
+>>>>>>> 05c8a4be60b4e0406c06aee4b005357dba6765ab
+>>>>>>> 933895a650bb215f56aa3a3074b5d5ecc6393763
   </div>
 </template>
 
